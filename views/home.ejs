@@ -1,0 +1,22 @@
+
+<%- include("partials/header"); -%>
+    <h1>Climate change</h1>
+    <div class="home-para">
+      <p> <%= startingContent %> </p>
+    </div>
+
+
+  <%  posts.forEach(function(post){ %>
+
+    <h1><%=post.title%></h1>
+    <div class="home-para">
+      <p>
+      <%=post.content.substring(0, 100) + " ..."%>
+      <a href="/posts/<%=post._id%>">Read More</a>
+      </p>
+    </div>
+    
+    <% }) %>
+
+
+<%- include("partials/footer"); -%>
