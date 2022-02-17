@@ -1,4 +1,4 @@
-                                                DAILY JOURNAL WEBSITE
+# DAILY JOURNAL WEBSITE
 
 Check the deployed website in this URL: https://kumarajeeva-dailyjournal.herokuapp.com/
 
