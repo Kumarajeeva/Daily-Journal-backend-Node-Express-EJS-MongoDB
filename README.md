@@ -11,6 +11,10 @@ INSTALLATION AND RUNNING:
 * Install a CLI like "Hyper" or any terminal based on your preference.
 * Open Hyper and cd into the working directory.
 * Run the command "npm install". This command will install all the dependencies.
+* Install "Robo3T" and MongoDb software in the PC.
+* In the app.js file, change the URL in the "mongoose.connect" line to the URL of your own local mongoDB database.
+* Now open a new tab in Hyper and run the command "mongod".
+* Now open a new tab in Hyper and run the command "mongo".
 * Now run the command "node app.js".
 * Now, the app will run successfully.
 * Go to "http"//localhost:3000" in any browser to access the website.
