@@ -12,11 +12,12 @@ const contactContent = "For enquires and doubts, reach out to us though email at
 const app = express();
 
 app.set('view engine', 'ejs');
+dotenv.config();
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://Kumarajeeva:Mongodb29%40@cluster0.wzhai.mongodb.net/dailyJournalDB", {useNewUrlParser: true,useUnifiedTopology: true});
+mongoose.connect(process.env.CONNECTION_URL, {useNewUrlParser: true,useUnifiedTopology: true});
 
 const postSchema={
   title: String,
